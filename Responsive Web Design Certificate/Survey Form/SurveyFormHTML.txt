@@ -1,0 +1,132 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Survey form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this survey with the approproiate information</p>
+  
+  <fieldset>
+    <form id="survey-form">
+      <label id="name-label">Name
+        <input id="name" type="text" placeholder="Enter your name"required>
+        </input>
+      </label>
+      <label id="email-label">Email
+        <input id="email" type="email" placeholder="Enter a valid email" required >
+        </input>
+      </label>
+      <label id="number-label">Number
+        <input id="number" type="number" min="1"max="10" placeholder="Enter your age">
+        </input>
+      </label>
+
+      <fieldset>
+        <label for ="dropdown" id="dropdown-label">How many hours a week do you spend exercising?</label>
+        <select id="dropdown">
+          <option value="">select one</option>
+          <option value="1">1-3 hours</option>
+          <option value="2">4-10 hours</option>
+          <option value="3">10+ hours</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which enviornment do you prefer to exercise in?</legend>
+        <label for="out"><input id="out" type="radio" name="select" class="inline" value="out" checked </input>Outdoors</label>
+        <label for="in"><input id="in" type="radio" name="select" class="inline" value="in"</input>Indoors</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What are some of your favorite forms of exercise?</legend>
+        <label for="cardio"><input id="cardio" type="checkbox" value="cardio" name="workouts" checked>Cardio</input></label>
+        <label for="weights"><input id="weights" type="checkbox" value="weights" name="workouts">Weight training</input></label>
+        <label for="pilates"><input id="pilates" type="checkbox" value="pilates" name="workouts">Pilates</input></label>
+        <label for="other"><input id="other" type="checkbox" value="other" name="workouts">Other</input></label>
+      </fieldset>
+      
+      <fieldset>
+        <label for="other-exercise">If you selected other, provide a few of your favorite forms of exercise..<textarea id="other-exercise" name="other-exercise" rows="4" cols="35" placeholder="boxing.."></textarea></label>
+      </fieldset>
+
+      <input id="submit" type="submit" name="Submit"></input>
+
+    </form>
+  </fieldset>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #2a2a40;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+** end of undefined **
+
