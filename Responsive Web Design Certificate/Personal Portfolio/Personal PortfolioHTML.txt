@@ -1,0 +1,235 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <a href="#welcome-section">Welcome</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+   
+    <section id="welcome-section">
+      <h1>Hala Khattab</h1>
+      <p>Aspiring Software Developer</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-tile"> 
+        <img src="https://raw.githubusercontent.com/halakhattab/FreeCodeCamp-Projects/main/Responsive%20Web%20Design%20Certificate/Survey%20Form/SurveyformSS.png" alt="survey-picture" class="project-image"></img>
+        <a href="https://github.com/halakhattab/FreeCodeCamp-Projects/tree/3ee0a40717f5efd35ec0cba236e0b1f0a1c8b299/Responsive%20Web%20Design%20Certificate/Survey%20Form" target="_blank">Survey Form</a>
+      </div>
+
+      <div class="project-tile"> 
+        <img src="https://raw.githubusercontent.com/halakhattab/FreeCodeCamp-Projects/main/Responsive%20Web%20Design%20Certificate/Tribute%20Page/TributePageSS.png" alt="tribute-picture" class="project-image"></img>
+        <a href="https://github.com/halakhattab/FreeCodeCamp-Projects/tree/3ee0a40717f5efd35ec0cba236e0b1f0a1c8b299/Responsive%20Web%20Design%20Certificate/Tribute%20Page" target="_blank">Tribute Page</a>
+      </div>
+
+      <div class="project-tile"> 
+        <img src="https://raw.githubusercontent.com/halakhattab/FreeCodeCamp-Projects/main/Responsive%20Web%20Design%20Certificate/Technical%20Documentation/TechnicalDocSS.png" alt="technical-picture" class="project-image"></img>
+        <a href="https://github.com/halakhattab/FreeCodeCamp-Projects/tree/3ee0a40717f5efd35ec0cba236e0b1f0a1c8b299/Responsive%20Web%20Design%20Certificate/Technical%20Documentation" target="_blank">Technical Documentation</a>
+      </div>
+
+      <div class="project-tile"> 
+        <img src="https://github.com/halakhattab/FreeCodeCamp-Projects/blob/main/Responsive%20Web%20Design%20Certificate/Product%20Landing/ProductLandingSS.png?raw=true" alt="product-picture" class="project-image"></img>
+        <a href="https://github.com/halakhattab/FreeCodeCamp-Projects/tree/3ee0a40717f5efd35ec0cba236e0b1f0a1c8b299/Responsive%20Web%20Design%20Certificate/Product%20Landing" target="_blank">Product Landing</a>
+      </div>
+      
+    </section>
+
+    <footer id="contact">
+      <a id="profile-link" href="https://github.com/halakhattab" target="_blank">GitHub Profile<a/>
+    </footer>
+  
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #001f3f;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003366;
+  padding: 15px 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbar a {
+  color: #e0e0e0;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1.1rem;
+}
+
+#navbar a:hover {
+  background-color: #4caf50;
+  color: #001f3f;
+  border-radius: 5px;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #001f3f, #003366);
+  color: #e0e0e0;
+  padding: 20px;
+}
+
+#welcome-section h1 {
+  font-size: 4rem;
+  margin: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#welcome-section p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in-out 1s;
+}
+
+#projects {
+  padding: 50px 20px;
+  background-color: #003366;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-tile {
+  background-color: #333333;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-tile a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  background-color: #444444;
+}
+
+.project-tile.centered {
+  grid-column: span 2;
+  margin-top: 20px;
+}
+
+.project-tile:hover {
+  background-color: #4caf50;
+  transform: scale(1.05);
+}
+
+#contact {
+  padding: 20px;
+  background-color: #003366;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+#contact a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #4caf50;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact a:hover {
+  background-color: #4caf50;
+  color: #001f3f;
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  #navbar a {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .project-tile {
+    height: auto;
+  }
+
+  .project-tile a {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+** end of undefined **
+
