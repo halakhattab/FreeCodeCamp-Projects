@@ -1,0 +1,80 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp tribute page project" />
+    <title id="title">Tribute Page </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Artificial Intelligence & Machine Learning</h1>
+    </header>
+    <main id="main">
+      <div id="img-div">
+        <img id="image" src="https://miro.medium.com/v2/resize:fit:1262/format:webp/0*Q3PICBlib-932hhH.png"></img>
+        <div id="img-caption">
+          <p>Artificial Intelligence Breakdown</p>
+        </div>
+      </div>
+        <p id="tribute-info">Dive into the world of Artificial Intelligence and Machine Learning with this dedicated website. This project breaks down the core principles of AI and ML, offering a glimpse into how these technologies are transforming industries. From foundational algorithms to real-world applications, learn how AI and ML are driving innovation and shaping the future. For a deeper exploration, click the link below.</p>
+        <address>
+          <p>Learn more at <a id="tribute-link" href="https://mitsloan.mit.edu/ideas-made-to-matter/machine-learning-explained" target="_blank">MIT Sloan Research</a></p>
+        <address>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+img { 
+  display: block;
+  }
+
+#image { 
+  max-width: 100%;
+  height: auto;   
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+body {
+  background-color: #0a0a23;
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+body a { 
+  color: #dfdfe2
+}
+
+#img-caption { 
+  font-size: 13px;  
+}
+
+#tribute-info { 
+  font-size: 16px; 
+}
+
+
+** end of undefined **
+
