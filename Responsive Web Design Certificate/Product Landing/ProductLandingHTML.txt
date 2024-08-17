@@ -1,0 +1,293 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"</meta>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css"</link>
+  </head>
+  
+  <body>
+    <header id="header">
+      <div class="header-content">
+        <img id="header-img" src="https://i.pinimg.com/564x/99/21/cb/9921cb7f3ea23f1a3a93f1654f793f89.jpg"></img>
+        <h1 class="yoga-mat">Pro Yoga Mat</h1>
+      </div>
+
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how_to_use" class="nav-link">How to Use</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+      
+    </header>
+     
+
+      <main id="main-doc">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" type="email" name="email" placeholder="Enter your email address"></input>
+          <input id="submit" type="submit"></input>
+        </form>
+
+        <section id="features" class="main-section">
+          <h2>Features</h2>
+          <ul>
+            <li>Extra-thick cushioning for maximum comfort</li>
+            <li>Non-slip surface to keep you steady</li>
+            <li>Eco-friendly and non-toxic materials</li>
+            <li>Available in a variety of calming colors</li>
+            <li>Lightweight and easy to carry</li>
+          </ul>
+        </section>
+
+        <section id="how_to_use" class="main-section">
+          <h2>How to Use</h2>
+          <p>Learn how to get the most out of your Pro Yoga Mat with these easy-to-follow tutorials and tips. Whether you're a beginner or a seasoned yogi, our guide will help you enhance your practice.</p>
+          <iframe id="video" src="https://www.youtube.com/embed/9MazN_6wdqI"></iframe>
+        </section>
+
+        <section id="pricing" class="main-section">
+          <h2>Pricing</h2>
+          <p>Choose the best plan for your needs:</p>
+          <ul>
+            <li><strong>Standard Mat:</strong> $29.99 - Perfect for home practice</li>
+            <li><strong>Deluxe Mat:</strong> $49.99 - Includes a carrying strap and storage bag</li>
+            <li><strong>Premium Mat:</strong> $69.99 - Extra-thick, eco-friendly, and comes with a free yoga block</li>
+        </ul>
+        </section>
+      </main>
+  </body>
+ </html> 
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#header-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.yoga-mat {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+  font-weight: bold;
+}
+
+#nav-bar {
+  background-color: #333;
+  padding: 10px 20px;
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+#nav-bar a:hover {
+  background-color: #575757;
+  color: #ffd700; 
+}
+
+main {
+  margin-top: 120px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#email {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  width: 300px;
+  transition: border-color 0.3s;
+}
+
+#email:focus {
+  border-color: #5cb85c;
+  outline: none;
+}
+
+#submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 0 5px 5px 0;
+  background-color: #5cb85c;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#submit:hover {
+  background-color: #4cae4c;
+  transform: scale(1.05);
+}
+
+.main-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#features {
+  background-color: #e9f5e9;
+}
+
+#features h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center; 
+  font-family: 'poppins', sans-serif; 
+}
+
+#features ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#features li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#features li::before {
+  content: "✔"; 
+  color: #5cb85c;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+}
+
+#how_to_use { 
+  text-align: center;
+  font-family: 'poppins', sans-serif; 
+}
+
+#video {
+  width: 100%;
+  height: 315px;
+  border: none;
+  border-radius: 10px;
+}
+
+#pricing {
+  background-color: #fefbd8;
+}
+
+#pricing h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#pricing p { 
+  text-align: center; 
+  font-family: 'Poppins', sans-serif; 
+}
+
+#pricing ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#pricing li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header-img {
+    margin-bottom: 10px;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-bar a {
+    margin: 10px 0;
+  }
+
+  #form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #email {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #submit {
+    width: 100%;
+  }
+}
+
+** end of undefined **
+
